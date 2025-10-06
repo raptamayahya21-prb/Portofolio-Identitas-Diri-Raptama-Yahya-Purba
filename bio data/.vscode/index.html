@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Raptama Yahya Purba</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header id="beranda">
+        <img src="image/yahya blk.jpg" alt="foto" class="profile-pic">
+        <h1 style="color: rgb(41, 106, 212);">Raptama Yahya Purba </h1>
+        <p>Universitas Negeri Medan | Fakultas Matematika dan Ilmu Pengetahuan Alam</p>
+        <p>Program Studi Ilmu Komputer Angkatan 2025 C</p>
+        <p>PSIK 25 C </p>
+    </header>
+
+    <div class="container">
+
+        <section id="tentang">
+            <h2>Tentang Saya</h2>
+            <p>Perkenalkan nama saya Raptama Yahya Purba, saya adalah mahasiswa Universitas Negeri Medan, Fakultas Matematika dan Ilmu Pengetahuan Alam, Prodi Ilmu Komputer. Saya memilih Prodi Ilmu Komputer di Universitas Negeri Medan ini karena saya penasaran terhadap Artificial Intelligence (AI).</p>
+            </section>
+        
+        <hr>
+
+        <section id="pendidikan">
+            <h2>Pendidikan</h2>
+            <ul>
+                <li>
+                    <strong> Universitas Negeri Medan </strong> - Ilmu Komputer (S1)
+                    <br> 2025 &mdash; Sekarang
+                </li>
+                <li>
+                    <strong>Madrasah Aliyah Swasta Al-Kausar Simalungun </strong> - Ilmu Pengetahuan Alam
+                    <br> 2021 &mdash; 2024
+                </li>
+                <li>
+                    <strong>Madrasah Tsanawiyah Swasta AL-Kautsar Simalungun</strong> 
+                    <br> 2018 &mdash; 2021
+                </li>
+                <li>
+                    <strong>Sekolah Dasar Negeri 091285 Panei Tongah</strong> 
+                    <br> 2012 &mdash; 2018
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="organisasi">
+            <h2>Pengalaman Organisasi</h2>
+            <ul>
+                <li>
+                    <strong>Organisasi Pelajar Pondok Pesantren Al-kautsar, Ketua Bagian Bahasa</strong>
+                    <br> 2023 &mdash; 2024
+                    <p>Menyelenggarakan Acara Demonstrasi Bahasa dan Aneka Ria </p>
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="kontak">
+            <h2>Hubungi Saya</h2>
+            <p>Silakan hubungi saya melalui:</p>
+            <ul>
+                <li>Email: <a href="mailto:raptamayahya21@gmail.com">raptamayahya21@gmail.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/raptama-yahya-purba-a44088310" target="_blank">Raptama Yahya Purba</a></li>
+                <li>GitHub:<a href="https://www.github.com/raptamayahya21-prb" target="_blank">raptamayahya21-prb</a></li>
+                <li>Nomor Telepon: 082374123751</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="bagikan">
+            <h2>Bagikan Profil Ini</h2>
+            <p>Bantu saya menyebarkan profil ini!</p>
+            <button onclick="copyProfileLink()">Salin Tautan Profil</button>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Raptama Yahya Purba. Semua Hak Dilindungi.</p>
+        <p><a href="#beranda" style="color: rgb(255, 255, 255);">Kembali ke Atas</a></p>
+    </footer>
+
+    <script>
+        function copyProfileLink() {
+            const el = document.createElement('textarea');
+            el.value = window.location.href;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+            alert('Tautan profil telah disalin ke clipboard!');
+        }
+    </script>
+
+</body>
+</html>
